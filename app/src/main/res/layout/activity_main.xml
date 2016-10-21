@@ -24,9 +24,19 @@
         android:text="Stop Service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
         android:id="@+id/buttonStopService"
         android:layout_below="@+id/buttonStartService"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Bind Service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBindService"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/buttonStopService"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 </RelativeLayout>

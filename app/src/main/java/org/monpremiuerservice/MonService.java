@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
-public class MonService extends Service {
-    public MonService() {
+public class MonService extends Service
+{
+    public MonService()
+    {
         // ne rien mettre dans le constructeur généralement
     }
 
@@ -16,13 +18,15 @@ public class MonService extends Service {
     }
 
     @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
+    public int onStartCommand(Intent intent, int flags, int startId)
+    {
         Log.v("service", "on start command");
         return super.onStartCommand(intent, flags, startId);
     }
 
     @Override
-    public void onDestroy() {
+    public void onDestroy()
+    {
         Log.v("service", "on destroy command");
         // il faudrait arrêter le service sinon il tourne toujours
         super.onDestroy();
@@ -30,7 +34,8 @@ public class MonService extends Service {
 
 
     @Override
-    public IBinder onBind(Intent intent) {
+    public IBinder onBind(Intent intent)
+    {
         // TODO: Return the communication channel to the service.
         throw new UnsupportedOperationException("Not yet implemented");
     }
