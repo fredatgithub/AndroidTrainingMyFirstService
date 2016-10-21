@@ -7,7 +7,7 @@ import android.util.Log;
 
 public class MonService extends Service {
     public MonService() {
-        // ne rien mettre dans le constructeur
+        // ne rien mettre dans le constructeur généralement
     }
 
     @Override
